@@ -4,67 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Alex • Portfolio</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    /* ===== Base styles ===== */
-    *{box-sizing:border-box;margin:0;padding:0}
-    body{
-      font-family: system-ui, Arial, sans-serif;
-      line-height:1.6;
-      background:#f4f8fc;
-      color:#1d2430;
-    }
-    header{
-      background:#007acc;
-      color:#fff;
-      padding:24px 16px;
-      text-align:center;
-      position:sticky;
-      top:0;
-      z-index:1000;
-    }
-    header h1{margin:0 0 6px;font-size:2rem}
-    header p{margin:0;opacity:.95}
-    .nav{
-      margin-top:12px;display:flex;gap:12px;
-      justify-content:center;flex-wrap:wrap;
-    }
-    .nav a{
-      text-decoration:none;
-      padding:8px 14px;
-      border-radius:8px;
-      background:rgba(255,255,255,.15);
-      color:#fff;
-      border:1px solid rgba(255,255,255,.25);
-      transition:.3s;
-    }
-    .nav a:hover,.nav a.active{background:#fff;color:#007acc}
-
-    section{
-      padding:22px;
-      max-width:900px;
-      margin:22px auto;
-      background:#fff;
-      border-radius:10px;
-      box-shadow:0 4px 10px rgba(0,0,0,.08);
-    }
-    section h2, section h3{
-      color:#fff;
-      background:#000;
-      display:inline-block;
-      padding:6px 12px;
-      border-radius:6px;
-      margin:0 0 14px;
-    }
-    footer{
-      text-align:center;
-      padding:16px;
-      background:#333;
-      color:#fff;
-      margin-top:30px;
-    }
+    /* Page sections spacing */
+    section { scroll-margin-top: 80px; }
   </style>
 </head>
-<body>
+<body class="theme-blue">
   <header>
     <h1>Alex — Portfolio</h1>
     <p>Assessments • Engineering • Web & App Development</p>
@@ -75,11 +21,10 @@
     </nav>
   </header>
 
-  <!-- Home -->
+  <!-- Home Section -->
   <section id="home">
     <h2>About Me</h2>
-    <p>With 7+ years helping 300+ students across IT, Business, Finance & Management, 
-       I deliver accurate, on-time and original work.</p>
+    <p>With 7+ years helping 300+ students across IT, Business, Finance & Management, I deliver accurate, on-time and original work.</p>
   </section>
 
   <section>
@@ -91,7 +36,7 @@
     </ul>
   </section>
 
-  <!-- Services -->
+  <!-- Services Section -->
   <section id="services">
     <h2>Services</h2>
     <h3>Academic Help</h3>
@@ -99,11 +44,13 @@
       <li>All courses, assessments, reports, essays, dissertations</li>
       <li>Case studies, presentations, research summaries</li>
     </ul>
+
     <h3>Engineering Assignments</h3>
     <ul>
       <li>Civil, Mechanical & Electrical project reports & designs</li>
       <li>AutoCAD & Revit drawings</li>
     </ul>
+
     <h3>Web & App Development</h3>
     <ul>
       <li>Responsive websites, portfolios, e-commerce</li>
@@ -111,7 +58,7 @@
     </ul>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Get in Touch</h2>
     <ul>
@@ -125,23 +72,25 @@
   </footer>
 
   <script>
-    // year auto-update
+    // Footer year
     document.getElementById('y').textContent=new Date().getFullYear();
 
-    // active nav link on scroll
+    // Highlight active nav on scroll
     const navLinks=document.querySelectorAll('.nav a');
     const sections=document.querySelectorAll('section');
     window.addEventListener('scroll',()=>{
       let current='';
       sections.forEach(sec=>{
         const top=window.scrollY;
-        const offset=sec.offsetTop-120;
+        const offset=sec.offsetTop-100;
         const height=sec.offsetHeight;
         if(top>=offset && top<offset+height){current=sec.getAttribute('id');}
       });
       navLinks.forEach(link=>{
         link.classList.remove('active');
-        if(link.getAttribute('href')==='#'+current){link.classList.add('active');}
+        if(link.getAttribute('href')==='#'+current){
+          link.classList.add('active');
+        }
       });
     });
   </script>
