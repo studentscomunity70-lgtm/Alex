@@ -1,50 +1,34 @@
-/* General page style */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex • Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-purple">
+  <header>
+    <h1>Contact</h1>
+    <p>Fast replies with scope, timeline, and fair quote</p>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-/* Header */
-header {
-  background: #007acc;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
+  <section>
+    <h2>Quick Links</h2>
+    <ul>
+      <li><a href="mailto:studentscomunity70@gmail.com">studentscomunity70@gmail.com</a></li>
+      <li><a href="https://github.com/studentscomunity70-lgtm" target="_blank" rel="noopener">GitHub Profile</a></li>
+      <li><a href="https://instagram.com/communitystudents?igsh=Y2ljYTk1ODJgZz==" target="_blank" rel="noopener">Instagram</a></li>
+      <li>WhatsApp: +61 480 810 321</li>
+    </ul>
+  </section>
 
-header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-}
+  <footer>© <span id="y"></span> Alex</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
 
-header p {
-  font-size: 1.2rem;
-}
-
-/* Sections */
-section {
-  padding: 20px;
-  max-width: 900px;
-  margin: auto;
-  background: white;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-section h2 {
-  color: #007acc;
-  margin-bottom: 10px;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 10px;
-  background: #333;
-  color: white;
-}
