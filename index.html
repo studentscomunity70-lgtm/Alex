@@ -11,7 +11,7 @@
     <h1>Alex — Portfolio</h1>
     <p>Assessments • Engineering • Web & App Development</p>
     <nav class="nav">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -31,13 +31,11 @@
     </ul>
   </section>
 
-  <footer>
-    © <span id="y"></span> Alex — All rights reserved
-  </footer>
-
+  <footer>© <span id="y"></span> Alex — All rights reserved</footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +50,7 @@
     <p>End-to-end academic, technical, and professional support</p>
     <nav class="nav">
       <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
+      <a href="services.html" class="active">Services</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
@@ -85,6 +83,7 @@
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,10 +95,19 @@
 <body class="theme-purple">
   <header>
     <h1>Contact</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Get in touch</h2>
     <ul>
-      <li><a href="mailto:studentscomunity30@gmail.com">studentscomunity70@gmail.com</a></li>
-      <li><a href="https://github.com/studentscomunity30-lgtm" target="_blank" rel="noopener">GitHub Profile</a></li>
-      <li>WhatsApp: +61 480 810 321</li>
+      <!-- make sure the email in the link matches the visible text -->
+      <li>Email: <a href="mailto:studentscomunity3@gmail.com">studentscomunity3@gmail.com</a></li>
+      <li>WhatsApp: <a href="https://wa.me/61480810321" target="_blank" rel="noopener">+61 480 810 321</a></li>
     </ul>
   </section>
 
@@ -107,5 +115,4 @@
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-<link rel="stylesheet" href="style.css">
 
