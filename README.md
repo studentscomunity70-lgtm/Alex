@@ -37,28 +37,6 @@ Developed ICT improvement plans, network designs, and operational strategies for
 
 Guided 300+ students with assignments, presentations, and portfolios across multiple disciplines, consistently achieving excellent grades.
 
-5. Client Feedback
-
-⭐ Sarah M. (MBA Student)
-“Alex helped me with my business case study, and I scored 85% (High Distinction). Very professional and always on time.”
-
-⭐ David K. (Engineering Student)
-“Clear, detailed, and well-structured engineering project report. I achieved 92% in my final submission. Highly recommend Alex for technical work.”
-
-⭐ Maria L. (IT Graduate)
-“Alex guided me through a web development project. The site was responsive, clean, and user-friendly. My project was graded A+ (90%).”
-
-⭐ Kevin R. (Health & Social Care Student)
-“With Alex’s support on my dissertation, I passed with Distinction (88%). Exceeded expectations!”
-
 6. Contact Me +61 480 810 321
 
-Form fields:
 
-Your Name
-
-Your Email
-
-Your Message
-
-Send me 
