@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex • Portfolio</title>
+  <title>Alex • Home</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Page sections spacing */
-    section { scroll-margin-top: 80px; }
-  </style>
 </head>
 <body class="theme-blue">
   <header>
     <h1>Alex — Portfolio</h1>
     <p>Assessments • Engineering • Web & App Development</p>
     <nav class="nav">
-      <a href="#home" class="active">Home</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+      <a href="index.html" class="active">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home">
+  <section>
     <h2>About Me</h2>
     <p>With 7+ years helping 300+ students across IT, Business, Finance & Management, I deliver accurate, on-time and original work.</p>
   </section>
@@ -36,63 +31,84 @@
     </ul>
   </section>
 
-  <!-- Services Section -->
-  <section id="services">
-    <h2>Services</h2>
-    <h3>Academic Help</h3>
+  <footer>© <span id="y"></span> Alex — All rights reserved</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex • Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-teal">
+  <header>
+    <h1>Services</h1>
+    <p>End-to-end academic, technical, and professional support</p>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Academic Help</h2>
     <ul>
       <li>All courses, assessments, reports, essays, dissertations</li>
       <li>Case studies, presentations, research summaries</li>
     </ul>
+  </section>
 
-    <h3>Engineering Assignments</h3>
+  <section>
+    <h2>Engineering Assignments</h2>
     <ul>
       <li>Civil, Mechanical & Electrical project reports & designs</li>
       <li>AutoCAD & Revit drawings</li>
     </ul>
+  </section>
 
-    <h3>Web & App Development</h3>
+  <section>
+    <h2>Web & App Development</h2>
     <ul>
       <li>Responsive websites, portfolios, e-commerce</li>
       <li>Mobile & desktop apps • UI/UX research & wireframes</li>
     </ul>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Get in Touch</h2>
+  <footer>© <span id="y"></span> Alex</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex • Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-purple">
+  <header>
+    <h1>Contact</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Get in touch</h2>
     <ul>
       <li>Email: <a href="mailto:studentscomunity3@gmail.com">studentscomunity3@gmail.com</a></li>
       <li>WhatsApp: <a href="https://wa.me/61480810321" target="_blank" rel="noopener">+61 480 810 321</a></li>
     </ul>
   </section>
 
-  <footer>
-    © <span id="y"></span> Alex — All rights reserved
-  </footer>
-
-  <script>
-    // Footer year
-    document.getElementById('y').textContent=new Date().getFullYear();
-
-    // Highlight active nav on scroll
-    const navLinks=document.querySelectorAll('.nav a');
-    const sections=document.querySelectorAll('section');
-    window.addEventListener('scroll',()=>{
-      let current='';
-      sections.forEach(sec=>{
-        const top=window.scrollY;
-        const offset=sec.offsetTop-100;
-        const height=sec.offsetHeight;
-        if(top>=offset && top<offset+height){current=sec.getAttribute('id');}
-      });
-      navLinks.forEach(link=>{
-        link.classList.remove('active');
-        if(link.getAttribute('href')==='#'+current){
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
+  <footer>© <span id="y"></span> Alex</footer>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
