@@ -89,3 +89,18 @@ footer{
   --card:#ffffff;
   --text:#201834;
 }
+
+:root { --bg:#f9f9f9; --fg:#333; --brand:#007acc; }
+body { margin:0; font-family:system-ui, Arial, sans-serif; line-height:1.6; color:var(--fg); background:var(--bg); }
+header { background: var(--brand); color:#fff; padding:24px 16px; text-align:center; }
+header h1 { margin:0 0 6px; }
+.nav { margin-top:12px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+.nav a { text-decoration:none; padding:10px 14px; border-radius:10px; background:rgba(255,255,255,.15); color:#fff; border:1px solid rgba(255,255,255,.3); }
+.nav a:hover { background:rgba(255,255,255,.3); }
+.nav a.active { background:#fff; color:var(--brand); }
+section { max-width:900px; margin:18px auto; background:#fff; padding:20px; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,.05); }
+footer { text-align:center; padding:16px; color:#fff; background:#333; }
+
+.theme-blue { --brand:#007acc; }
+.theme-teal { --brand:#0f9d8f; }
+.theme-purple { --brand:#6a4cff; }
