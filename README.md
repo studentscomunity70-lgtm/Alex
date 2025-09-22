@@ -51,7 +51,7 @@ Guided 300+ students with assignments, presentations, and portfolios across mult
 ⭐ Kevin R. (Health & Social Care Student)
 “With Alex’s support on my dissertation, I passed with Distinction (88%). Exceeded expectations!”
 
-6. Contact Me
+6. Contact Me +61 480 810 321
 
 Form fields:
 
@@ -61,4 +61,4 @@ Your Email
 
 Your Message
 
-Button: “Send Message”
+Send me 
