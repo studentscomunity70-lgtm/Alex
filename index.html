@@ -1,25 +1,85 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex • Home</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Alex • Portfolio</title>
+  <style>
+    /* ===== Base styles ===== */
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family: system-ui, Arial, sans-serif;
+      line-height:1.6;
+      background:#f4f8fc;
+      color:#1d2430;
+    }
+    header{
+      background:#007acc;
+      color:#fff;
+      padding:24px 16px;
+      text-align:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    header h1{margin:0 0 6px;font-size:2rem}
+    header p{margin:0;opacity:.95}
+    .nav{
+      margin-top:12px;display:flex;gap:12px;
+      justify-content:center;flex-wrap:wrap;
+    }
+    .nav a{
+      text-decoration:none;
+      padding:8px 14px;
+      border-radius:8px;
+      background:rgba(255,255,255,.15);
+      color:#fff;
+      border:1px solid rgba(255,255,255,.25);
+      transition:.3s;
+    }
+    .nav a:hover,.nav a.active{background:#fff;color:#007acc}
+
+    section{
+      padding:22px;
+      max-width:900px;
+      margin:22px auto;
+      background:#fff;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,.08);
+    }
+    section h2, section h3{
+      color:#fff;
+      background:#000;
+      display:inline-block;
+      padding:6px 12px;
+      border-radius:6px;
+      margin:0 0 14px;
+    }
+    footer{
+      text-align:center;
+      padding:16px;
+      background:#333;
+      color:#fff;
+      margin-top:30px;
+    }
+  </style>
 </head>
-<body class="theme-blue">
+<body>
   <header>
     <h1>Alex — Portfolio</h1>
     <p>Assessments • Engineering • Web & App Development</p>
     <nav class="nav">
-      <a href="index.html" class="active">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="#home" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <section>
+  <!-- Home -->
+  <section id="home">
     <h2>About Me</h2>
-    <p>With 7+ years helping 300+ students across IT, Business, Finance & Management, I deliver accurate, on-time and original work.</p>
+    <p>With 7+ years helping 300+ students across IT, Business, Finance & Management, 
+       I deliver accurate, on-time and original work.</p>
   </section>
 
   <section>
@@ -31,88 +91,59 @@
     </ul>
   </section>
 
-  <footer>© <span id="y"></span> Alex — All rights reserved</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex • Services</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="theme-teal">
-  <header>
-    <h1>Services</h1>
-    <p>End-to-end academic, technical, and professional support</p>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="services.html" class="active">Services</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section>
-    <h2>Academic Help</h2>
+  <!-- Services -->
+  <section id="services">
+    <h2>Services</h2>
+    <h3>Academic Help</h3>
     <ul>
       <li>All courses, assessments, reports, essays, dissertations</li>
       <li>Case studies, presentations, research summaries</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Engineering Assignments</h2>
+    <h3>Engineering Assignments</h3>
     <ul>
       <li>Civil, Mechanical & Electrical project reports & designs</li>
       <li>AutoCAD & Revit drawings</li>
     </ul>
-  </section>
-
-  <section>
-    <h2>Web & App Development</h2>
+    <h3>Web & App Development</h3>
     <ul>
       <li>Responsive websites, portfolios, e-commerce</li>
       <li>Mobile & desktop apps • UI/UX research & wireframes</li>
     </ul>
   </section>
 
-  <footer>© <span id="y"></span> Alex</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alex • Contact</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body class="theme-purple">
-  <header>
-    <h1>Contact</h1>
-    <nav class="nav">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
-
-  <section>
-    <h2>Get in touch</h2>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Get in Touch</h2>
     <ul>
-      <!-- make sure the email in the link matches the visible text -->
       <li>Email: <a href="mailto:studentscomunity3@gmail.com">studentscomunity3@gmail.com</a></li>
       <li>WhatsApp: <a href="https://wa.me/61480810321" target="_blank" rel="noopener">+61 480 810 321</a></li>
     </ul>
   </section>
 
-  <footer>© <span id="y"></span> Alex</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <footer>
+    © <span id="y"></span> Alex — All rights reserved
+  </footer>
+
+  <script>
+    // year auto-update
+    document.getElementById('y').textContent=new Date().getFullYear();
+
+    // active nav link on scroll
+    const navLinks=document.querySelectorAll('.nav a');
+    const sections=document.querySelectorAll('section');
+    window.addEventListener('scroll',()=>{
+      let current='';
+      sections.forEach(sec=>{
+        const top=window.scrollY;
+        const offset=sec.offsetTop-120;
+        const height=sec.offsetHeight;
+        if(top>=offset && top<offset+height){current=sec.getAttribute('id');}
+      });
+      navLinks.forEach(link=>{
+        link.classList.remove('active');
+        if(link.getAttribute('href')==='#'+current){link.classList.add('active');}
+      });
+    });
+  </script>
 </body>
 </html>
-
