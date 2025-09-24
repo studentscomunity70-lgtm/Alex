@@ -1,11 +1,11 @@
-# ALEX ASSESSMENT HELP
+   # ALEX ASSESSMENT HELP
 Hi, I’m Alex 👋
 
 With 7+ years of experience helping over 300 students across IT, Business, Finance, and Management, I deliver professional, original, and high-quality solutions.
 
 My focus is on academic excellence, technical accuracy, and client satisfaction always aligned with academic standards and industry best practices.
 
-3. Services
+Services
 
 I provide end-to-end support across academic, technical, and professional projects:
 
@@ -23,7 +23,7 @@ I provide end-to-end support across academic, technical, and professional projec
 
 ⚙ Technical & Non-Technical Projects → Customized solutions for business and IT needs.
 
-4. Projects
+Projects
    
 📊 Project Management
 
@@ -37,6 +37,6 @@ Developed ICT improvement plans, network designs, and operational strategies for
 
 Guided 300+ students with assignments, presentations, and portfolios across multiple disciplines, consistently achieving excellent grades.
 
-6. Contact Me +61 480 810 321
+Contact Me +61 480 810 321
 
 E-Mail Me  communitystudents3@gmail.com
