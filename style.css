@@ -19,3 +19,11 @@ h2 { margin-top: 0; }
 
 footer { border-top: 1px solid #eee; color: #555; padding: 20px 16px; margin-top: 24px; text-align: center; }
 .badge { font-weight: 600; background: #eaf4ff; color: #0b5cab; padding: 2px 8px; border-radius: 999px; border: 1px solid #cfe3ff; }
+.profile-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;        /* makes it a circle */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  margin-bottom: 20px;
+}
